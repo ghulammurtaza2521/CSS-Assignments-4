@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./image/1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main {
+            background-color: white;
+            width: 450px;
+            height: 650px;
+            border-radius: 5px;
+            margin-left: 170px;
+            margin-top: 80px;
+        }
+
+        #reg {
+            margin-left: 125px;
+            font-size: 40px;
+            color: black;
+            padding-top: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #reg:hover{
+            color: brown;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        input.name {
+            width: 350px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 40px;
+            margin-top: -20px;
+            background-image: url(./image/name.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+        }
+        input.name:hover{
+            background-color: rgba(226, 223, 223, 0.877);
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        input.lastname {
+            width: 350px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 40px;
+            margin-top: 25px;
+            background-image: url(./image/name.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+        }
+        input.lastname:hover{
+            background-color: rgba(226, 223, 223, 0.877);
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        input.email {
+            width: 350px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 40px;
+            margin-top: 25px;
+            background-image: url(./image/email2.jpg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+        }
+        input.email:hover{
+            background-color: rgba(226, 223, 223, 0.877);
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        input.pas {
+            width: 350px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 40px;
+            margin-top: 25px;
+            background-image: url(./image/pas.png);
+            background-size: 27px;
+            background-repeat: no-repeat;
+        
+        }
+        input.pas:hover{
+            background-color: rgba(226, 223, 223, 0.877);
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        #ra {
+
+            margin-left: 30px;
+            margin-top: 35px;
+            font-size: 30px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #ra:hover {
+            color: red;
+           
+            cursor: pointer;
+        }
+
+        select {
+            width: 412px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 40px;
+            margin-top: 25px;
+        }
+        select:hover{
+            background-color: rgba(226, 223, 223, 0.877);
+            cursor: pointer;
+            border: 2px solid black;
+            color: red;
+
+        }
+        button{
+            width: 412px;
+            border-radius: 5px;
+            font-size: 25px;
+            margin-left: 20px;
+            padding: 10px;
+            padding-left: 15px;
+            margin-top: 40px;
+            color: white;
+            background-color:rgb(49, 49, 63) ;
+        }
+        button:hover{
+            background-color: blueviolet;
+            color: yellow;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="reg"> Registration </h1>
+        <br>
+
+        <input type="text" class="name" placeholder="First Name">
+        <br>
+        <input type="text" class="lastname" placeholder="Last Name">
+        <br>
+        <input type="email" class="email" placeholder="Email Address">
+        <br>
+        <input type="password" class="pas" placeholder="Password">
+        <div id="ra">
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Famle"> Female
+        </div>
+        <div>
+            <select name="Country" size="1">
+                <option> Select Country</option>
+                <option value="PK">Pakistan</option>
+                <option value="AF">Afghanistan</option>
+                <option value="Ir">Iran</option>
+                <option value="AU">Australia</option>
+                <option value="AE">United Arab Emirates</option>
+                <option value="AR">Argentina</option>
+                <option value="SA">South Africa</option>
+                <option value="QA">Qatar</option>
+                <option value="TR">Turkey</option>
+                <option value="TY">Taiwan</option>
+                <option value="MY">Malaysia</option>
+                <option value="IT">Italy</option>
+                <option value="In">India</option>
+                <option value="BD">Bangladesh</option>
+                <option value="AZ">Azerbaijan</option>
+            </select>
+        </div>
+        <button> Signup </button>
+    </div>
+</body>
+
+</html>
